@@ -4,6 +4,7 @@
  * A SAM flag decoder
  *
  * License: MIT
+ *
 */
 
 import util.control.Breaks._
