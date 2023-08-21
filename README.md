@@ -3,7 +3,7 @@
 A CLI tool to decode SAM flags.
 
 ### Build
-This is known to compile with `Scala 3.2`. To build, first make sure that `sbt` is installed; then run `sbt assembly` at the root of the repo. You should find the JAR file under `targets/scala-3.x.x/`.
+This is known to compile with `Scala 3.3.0 LTS`. To build, first make sure that `sbt` is installed; then run `sbt assembly` at the root of the repo. You should find the JAR file under `targets/scala-3.x.x/`.
 
 ### Example
 ```
