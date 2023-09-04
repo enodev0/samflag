@@ -8,15 +8,17 @@
 */
 
 import util.control.Breaks._
+import scala.collection.mutable._
 
-def samflag_decode(f: Int, K: List[Int]): Array[Int] = {
+
+def samflag_decode(f: Int, K: List[Int]): List[Int] = {
     var flag = f;
 
-    var W = Array[Int]();
+    var W = ListBuffer[Int]();
 
     if (K.contains(flag)) {
         W = W :+ flag;
-        return W;
+        return W.toList;
     }
 
     def floor_K(n: Int): Int = {
@@ -43,7 +45,7 @@ def samflag_decode(f: Int, K: List[Int]): Array[Int] = {
             flag = flag - x;
         }
     }
-    return W;
+    return W.toList;
 }
 
 def print_help(): Unit = {
@@ -59,7 +61,7 @@ def print_help(): Unit = {
 @main
 def main(args: String*): Unit = {
 
-    val flagdef = scala.collection.mutable.Map (
+    val flagdef = Map (
         1 -> "Read paired (0x1, 1)",
         2 -> "Read mapped in proper pair (0x2, 2)",  // needs 1
         4 -> "Read unmapped (0x4, 4)",
