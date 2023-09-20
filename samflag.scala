@@ -61,7 +61,7 @@ def print_help(): Unit = {
 @main
 def main(args: String*): Unit = {
 
-    val flagdef = Map (
+    var flagdef = Map (
         1 -> "Read paired (0x1, 1)",
         2 -> "Read mapped in proper pair (0x2, 2)",  // needs 1
         4 -> "Read unmapped (0x4, 4)",
@@ -76,7 +76,7 @@ def main(args: String*): Unit = {
         2048 -> "Supplementary alignment (0x800, 2048)",
     );
 
-    val flags = List(2048, 1024, 512, 256,128, 64, 32, 16, 8, 4, 2, 1);
+    var flags: List[Int] = flagdef.keySet.toList.sortWith(_>_);
 
     if ((args.length < 1) | (args.length > 2)) {
         print_help();
@@ -84,7 +84,7 @@ def main(args: String*): Unit = {
 
     if (args(0) == "describe") {
         try {
-            val decoded = samflag_decode(args(1).toInt, flags);
+            val decoded = samflag_decode(args(1).toInt, flags).sortWith(_<_);
             printf("\n");
             for (f <- decoded) {
                 printf("  %s\t%s\n", f, flagdef(f));
@@ -98,7 +98,8 @@ def main(args: String*): Unit = {
             print_help();
         }
         printf("\n");
-        for (f <- flags) {
+
+        for (f <- flags.reverse) {
             printf("  %s\t%s\n", f, flagdef(f));
         }
         printf("\n");

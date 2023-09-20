@@ -1,14 +1,11 @@
-[0m[[0m[0mdebug[0m] [0m[0mIncluding: scala3-library_3-3.3.0.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding: scala-library-2.13.10.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: scala3-library_3-3.3.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: scala-library-2.13.10.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mCalculate mappings...[0m
 [0m[[0m[0mdebug[0m] [0m[0mChecking every *.class/*.jar file's SHA-1.[0m
 [0m[[0m[0mdebug[0m] [0m[0mMerging files...[0m
-[0m[[0m[0mdebug[0m] [0m[0mMerging 'NOTICE' with strategy 'rename'[0m
-[0m[[0m[0mdebug[0m] [0m[0mMerging 'LICENSE' with strategy 'rename'[0m
 [0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
 [0m[[0m[0minfo[0m] [0m[0mStrategy 'discard' was applied to a file (Run the task at debug level to see details)[0m
-[0m[[0m[0minfo[0m] [0m[0mStrategy 'rename' was applied to 2 files (Run the task at debug level to see details)[0m
-[0m[[0m[0mdebug[0m] [0m[0mSHA-1: fc8d15099a1e856199b4fdfbf725429903a9bd82[0m
+[0m[[0m[0mdebug[0m] [0m[0mSHA-1: c75d43f3b1f16b2d2f09ed41706657e67ac54acc[0m
 [0m[[0m[33mwarn[0m] [0m[0mIgnored unknown package option FixedTimestamp(Some(1262304000000))[0m
 [0m[[0m[0mdebug[0m] [0m[0mPackaging /run/host/home/sdc/Systems/enodev0/samflag/target/scala-3.3.0/samflag-assembly-1.0.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
